@@ -1,0 +1,46 @@
+Gee. I have decided to start making a usage handbook for the DJ windows-based
+application framework.
+
+        +---------+
+        | TWindow |
+        +----|----+
+             |
+       +-----+-------+
+       |             |
+  +----|----+     +--|---+
+  | TDialog |     | TApp |
+  +---------+     +------+
+
+
+
+object TWindow
+--------------
+   Everything that resides inside a window is also an object, whether it be a
+grid to edit a drawing in or a button or a switch or even a piece of text.
+It is possible to write or draw directly into a window but it is _strongly
+discouraged_.
+   The item linked list is created in the following way (see the docs on items
+for the creation of each item object):
+
+	items:=
+		NewStaticText(.....,
+		NewButton(.......,
+        	NewWhatever(.....,
+        	NewButton(.......,
+        	NewStaticText(.....,
+	nil)))));
+
+The last item in the linked list _MUST BE NIL_. If it is not then expect to
+see the program crash. For linking in a static variable item a special routine
+is provided for this called "Link" which takes the address of the item and
+returns the address of the item. This seems to make no sense but the return
+must be passed along to the previous item. In functions like "NewButton" this
+is part of the parameters. If you dont know what I am talking about dont worry
+I am not too sure either anymore. All I know is that the last time I used the
+stuff it worked.
+
+
+
+
+Dialog boxes:
+------------
