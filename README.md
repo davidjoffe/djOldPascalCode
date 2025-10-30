@@ -1,4 +1,4 @@
-Old isometric level editor and widgets/windowing system written in the '90s using TurboPascal by David Joffe.
+Old isometric level editor and widgets/windowing system written in the '90s using Turbo Pascal by David Joffe.
 
 Contents:
 ---------
