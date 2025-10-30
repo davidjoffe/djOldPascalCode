@@ -1,4 +1,4 @@
-Old isometric level editor and widgets/windowing system written in the '90s using TurboPascal by David Joffe.
+Old isometric level editor and widgets/windowing system written in the '90s using Turbo Pascal by David Joffe.
 
 Contents:
 ---------
@@ -114,4 +114,5 @@ See DJWIN\W_ITEM.PAS. Each TItem derivative understands various standard
 virtual methods, such as Show (to draw itself), Init, HandleMouse, HandleKey
 (I never really implemented HandleKey though), Move, FillBackground etc.
 -------------------------------------------
+
 
