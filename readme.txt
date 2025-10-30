@@ -1,3 +1,5 @@
+Old isometric level editor and widgets/windowing system written in the '90s using TurboPascal by David Joffe.
+
 Contents:
 ---------
 (1) DJ Windowed Application Framework (DJWIN)
@@ -5,6 +7,10 @@ Contents:
 (3) Known issues
 (4) Quickstart
 (5) Program structure
+
+[![screenshot 1](https://scorpioncity.com/images/screenshots/ed1.png)](https://scorpioncity.com/programming.html)
+
+[![screenshot 2](https://scorpioncity.com/images/screenshots/ed2.png)](https://github.com/davidjoffe/djOldPascalCode/)
 
 -------------------------------------------
 (1) DJ Windowed Application Framework (DJWIN)
@@ -108,3 +114,4 @@ See DJWIN\W_ITEM.PAS. Each TItem derivative understands various standard
 virtual methods, such as Show (to draw itself), Init, HandleMouse, HandleKey
 (I never really implemented HandleKey though), Move, FillBackground etc.
 -------------------------------------------
+
